@@ -19,7 +19,7 @@ use JMS\Payment\CoreBundle\Entity\ExtendedData;
 use JMS\Payment\CoreBundle\Plugin\Exception\FunctionNotSupportedException;
 
 use ETS\Payment\DotpayBundle\Client\Token;
-use ETS\Payment\DotpayBundle\Tools\String;
+use ETS\Payment\DotpayBundle\Tools\StringNormalizer;
 
 /*
  * Copyright 2012 ETSGlobal <ecs@etsglobal.org>
