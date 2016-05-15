@@ -71,7 +71,7 @@ class DotpayDirectPlugin extends AbstractPlugin
     protected $token;
 
     /**
-     * @var \ETS\Payment\DotpayBundle\Tools\String
+     * @var \ETS\Payment\DotpayBundle\Tools\StringNormalizer
      */
     protected $stringTools;
 
@@ -93,12 +93,12 @@ class DotpayDirectPlugin extends AbstractPlugin
     /**
      * @param Router  $router      The router
      * @param Token   $token       The client token
-     * @param String  $stringTools The String tool package
+     * @param StringNormalizer  $stringTools The StringNormalizer tool package
      * @param string  $url         The urlc
      * @param integer $type        The type
      * @param string  $returnUrl   The return url
      */
-    public function __construct(Router $router, Token $token, String $stringTools, $url, $type, $returnUrl)
+    public function __construct(Router $router, Token $token, StringNormalizer $stringTools, $url, $type, $returnUrl)
     {
         $this->router = $router;
         $this->token = $token;
